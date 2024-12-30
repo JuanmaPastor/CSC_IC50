@@ -1,0 +1,62 @@
+1.- Download the files: "growth_rate_bootstrapping_Colab.ipynb" and "ICmetrics_bootstrapping_Colab.ipynb"
+
+2a.- If you have a Google-Colab account upload these two files to your "Colab Notebooks" folder
+2b.- If you don't have a Google-Colab account open "https://colab.google" in your browser. Select "Open Colab" and in the "Open notebook" window select "Upload". Browse your local drive and select the file “growth_rates_bootstrapping_Colab.ipynb”. Repeat the process for the file “ICmetrics_bootstrapping_Colab.ipynb”.
+
+3.- In your Google Drive open the file "growth_rate_bootstrapping_Colab.ipynb"
+
+4.- Click on the first cell and execute it by pressing SHIFT+ENTER or by selecting "Runt the focused cell" from the "Runtime" menu.
+-In the "Permit this notebook to access your Google Drive files?" window select "Connect to Google Drive"
+-In the "Choose an account to continue to Google Drive for desktop" window select your Google account
+-In the "Sign in to Google Drive for desktop" windows select "Continue"
+-In the "Google Drive for desktop wants access to your Google Account" window select "See, edit, create, and delete all of your Google Drive files" and "Continue"
+
+**********************************************************
+4b.- If you want to upload a file, execute the following cell
+**********************************************************
+
+5.- Input the Excel filename and the number of sheets by executing the two following cells.
+**********************************************************
+If you want to test the program use the "data_example" file and enter the following:
+(write the inputs without " ")
+[] Excel filename --> "data_example.xlsx"
+[] Number of sheets in the Excel File (number of time points) --> "4"
+***********************************************************
+
+6.- After selecting the Excel file and indicating the number of sheets run all remaining cells:
+Select “*Execute cell and following cells*” in the “Runtime” menu (or press *CRTL*+F10) to execute all cells and see the result in the last cell, or execute cell by cell by pressing *SHIFT*+ENTER in each cell
+
+At the end of the notebook you can see the linear regressions for all the bootstrap samples with the average linear fit in red, and the histogram of the growth rates for each concentration.
+An Excel file with the effective growht rates for each concentration will have been created in your Google Drive and all figures will be saved in "jpg" format.
+
+
+7.- In your Google Drive open the file "ICmetrics_bootstrapping_Colab.ipynb"
+
+8.- Click on the first cell and execute it by pressing SHIFT+ENTER or by selecting "Runt the focused cell" from the "Runtime" menu.
+-In the "Permit this notebook to access your Google Drive files?" window select "Connect to Google Drive"
+-In the "Choose an account to continue to Google Drive for desktop" windows select your Google account
+-In the "Sign in to Google Drive for desktop" windows select "Continue"
+-In the "Google Drive for desktop wants access to your Google Account" window select "See, edit, create, and delete all of your Google Drive files" and "Continue"
+
+**********************************************************
+8b.- If you want to upload a file, execute the following cell
+**********************************************************
+
+9.- Enter the name of the Excel file with the growth rates created above, the number of time points (number of sheets from the previous file), the number of experiments per time point and the time point for IC50 calculation.
+**********************************************************
+If you want to test the program use the "data_example_growth_rates" file created with the previous program and enter the following:
+(write the inputs without " ")
+[] Excel filename --> "data_example_growth_rates.xlsx"
+[] Number of time points --> "4"
+[] Number of experiments per time point --> "9"
+[] Time point for IC50 calculation --> "3"
+***********************************************************
+
+10.- After selecting the Excel file and specifying the other parameters, execute all the remaining cells:
+Select “*Execute cell and following cells*” in the “Runtime” menu (or press *CRTL*+F10) to execute all cells and see the result in the last cell, or execute cell by cell by pressing *SHIFT*+ENTER in each cell
+
+At the end of the notebook you can see the non-linear fits (to the shifted exponential function) for all bootstrap samples with the average fit in red, and the histogram of the IC50 indices. The figure shows the IC50, IC0 and ICrmed values.
+The figure will be saved in "jpg" format in your Google Drive.
+
+
+
